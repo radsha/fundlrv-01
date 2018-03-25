@@ -1,0 +1,71 @@
+.plupload_logo, .plupload_header_title, .plupload_header_text {display:none;}
+.plupload_header_content {height: 32px;}
+.plupload_view_switch {bottom: -2px;}
+#uploader_start{bottom:-30px;}
+ul#tablelist{list-style:none; padding:0; margin:0;}
+ul#tablelist>li{margin:4px; float:left; cursor:move;}
+#gallery .preview{
+	padding-right:0;
+	overflow-x: hidden; 
+	overflow-y:scroll;
+	/* min-height:220px; */
+}
+.preview {list-style:none;padding:0; margin:0; width:100%;}
+.preview li{
+	margin:2px; 
+	padding:2px; 
+	border:1px solid #ccc; 
+	float:left; 
+	width:146px; 
+	height:146px; 
+	overflow:hidden; 
+	text-align:center; 
+	position:relative;
+}
+
+.preview li img{
+	margin:auto;
+	max-height:100%;
+}
+.preview li .del-preview{position:absolute; bottom:5px; right:5px;  top: inherit; text-decoration:none;}
+.top10{padding-top:10px;}
+.plupload_wrapper {min-width: 100% !important;}
+
+canvas{margin:4px; padding:4px;}
+#map{
+	height: 300px;
+	border: 1px solid #000;
+}
+      #pac-input {
+        background-color: #fff;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 12px;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 300px;
+      }
+
+      #pac-input:focus {
+        border-color: #4d90fe;
+      }
+
+      .pac-container {
+        font-family: Roboto;
+      }
+
+      #type-selector {
+        color: #fff;
+        background-color: #4d90fe;
+        padding: 5px 11px 0px 11px;
+      }
+
+      #type-selector label {
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 300;
+      }
+      #target {
+        width: 345px;
+      }

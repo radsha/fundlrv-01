@@ -1,0 +1,9 @@
+.vertical-text {
+-webkit-transform: rotate(-90deg);
+-moz-transform: rotate(-90deg);
+-text-align=center;
+}
+
+.back1 {
+  background-color:"#807f7d";
+}

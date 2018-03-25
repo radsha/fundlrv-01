@@ -1,0 +1,35 @@
+.sidebar{
+	background:#eee;
+	border:1px solid #f2f2f2;
+	padding:10px;
+	list-style:none;
+    list-style-type: none;
+
+}
+
+.sidebar ul,
+.option ul{
+    width: 100%;
+    min-height: 200px;
+    list-style-type: none;
+    padding: 0;
+	border:1px solid #eee;
+	
+}
+.sidebar li,
+.option ul li{
+	width:100%;
+	padding:10px;
+	margin:2px;
+}
+.sidebar .x_title h2{
+	width:100%;
+}
+
+.sidebar .x_panel{
+	min-height:40px;
+}
+
+.collapse-link{
+	cursor:pointer;
+}

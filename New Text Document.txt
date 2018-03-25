@@ -1,0 +1,67 @@
+Auth::guard('admin')->user()->fname .
+Auth::guard('admin')->user()->idoffice.
+
+.date('d-m-').(date('Y')+543).' | '.date('H:i:s')  
+
+
+fa-save  
+fa-arrow-circle-left text-danger
+
+  <div class="form-group has-success">
+
+       <label class="col-sm-2 control-label">เพศ</label>
+        <div class="col-sm-10">
+            <?php $datasex=DB::table('tbmembmaster_sex')->get();?>
+              <select name="sex" class="form-control">
+                    @foreach ($datasex as $datasex1)
+                        <option value="{{$datasex1->idsex}}" <?php if(!(strcmp($datasex1->idsex,$data ? $data->sex:1))) {echo "selected=\"selected\"";}?>>{{$datasex1->namesex}}</option>
+                    @endforeach
+              </select>
+        </div>
+
+  </div>
+
+ value="{{ $data ? App\Lib::dayen2($data->member_date) : old('member_date') }}">
+
+
+ Auth::guard('admin')->user()->fname .'|'.Auth::guard('admin')->user()->idoffice.'|'.date('d-m-').(date('Y')+543).' | '.date('H:i:s')  
+
+ @section('csscus')
+   <link href="{{url('public/theme/jquery-ui-1.12.1.full/jquery-ui.min.css')}}" rel="stylesheet" type="text/css">
+  @endsection
+
+@section('javascript')
+<script src="{{url('public/theme/jquery-ui-1.12.1.full/jquery-ui.js')}}"></script>
+  <script type="text/javascript">
+
+
+   		  $(function () {
+
+   var d = new Date();
+   var toDay = d.getDate() + '-' + (d.getMonth() + 1) + '-' + (d.getFullYear() );
+
+    $('input[name="member_date"]').datepicker({ dateFormat: 'dd-mm-yy', isBuddhist: true, defaultDate: toDay, dayNames: ['อาทิตย์', 'จันทร์', 'อังคาร', 'พุธ', 'พฤหัสบดี', 'ศุกร์', 'เสาร์'],
+     dayNamesMin: ['อา.','จ.','อ.','พ.','พฤ.','ศ.','ส.'],
+     monthNames: ['มกราคม','กุมภาพันธ์','มีนาคม','เมษายน','พฤษภาคม','มิถุนายน','กรกฎาคม','สิงหาคม','กันยายน','ตุลาคม','พฤศจิกายน','ธันวาคม'],
+     monthNamesShort: ['ม.ค.','ก.พ.','มี.ค.','เม.ย.','พ.ค.','มิ.ย.','ก.ค.','ส.ค.','ก.ย.','ต.ค.','พ.ย.','ธ.ค.']});
+
+    $('input[name="birth_date"]').datepicker({ dateFormat: 'dd-mm-yy', isBuddhist: true, defaultDate: toDay, dayNames: ['อาทิตย์', 'จันทร์', 'อังคาร', 'พุธ', 'พฤหัสบดี', 'ศุกร์', 'เสาร์'],
+    dayNamesMin: ['อา.','จ.','อ.','พ.','พฤ.','ศ.','ส.'],
+    monthNames: ['มกราคม','กุมภาพันธ์','มีนาคม','เมษายน','พฤษภาคม','มิถุนายน','กรกฎาคม','สิงหาคม','กันยายน','ตุลาคม','พฤศจิกายน','ธันวาคม'],
+    monthNamesShort: ['ม.ค.','ก.พ.','มี.ค.','เม.ย.','พ.ค.','มิ.ย.','ก.ค.','ส.ค.','ก.ย.','ต.ค.','พ.ย.','ธ.ค.']});
+    $('input[name="resign_date"]').datepicker({ dateFormat: 'dd-mm-yy', isBuddhist: true, defaultDate: toDay, dayNames: ['อาทิตย์', 'จันทร์', 'อังคาร', 'พุธ', 'พฤหัสบดี', 'ศุกร์', 'เสาร์'],
+     dayNamesMin: ['อา.','จ.','อ.','พ.','พฤ.','ศ.','ส.'],
+     monthNames: ['มกราคม','กุมภาพันธ์','มีนาคม','เมษายน','พฤษภาคม','มิถุนายน','กรกฎาคม','สิงหาคม','กันยายน','ตุลาคม','พฤศจิกายน','ธันวาคม'],
+     monthNamesShort: ['ม.ค.','ก.พ.','มี.ค.','เม.ย.','พ.ค.','มิ.ย.','ก.ค.','ส.ค.','ก.ย.','ต.ค.','พ.ย.','ธ.ค.']});
+
+
+
+   			});
+
+
+   </script>
+@endsection
+
+<i class="fa fa-edit text-success" style="font-size:16px"></i>
+
+<?php// $data= DB::table('fundtype')->join('fundtype_de','fundtype.fundid','=','fundtype_de.fundid') ->where('fundtype.fundidL', $data3->fundidL)->get(); ?>

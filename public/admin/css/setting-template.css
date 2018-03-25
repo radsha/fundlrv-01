@@ -1,0 +1,30 @@
+.block-preview{
+	border:1px solid #ccc;
+	min-height:120px;
+	position:relative;
+	display:inline-block;
+}
+.banner-preview > img{
+	max-width:100%;
+}
+img{
+	max-width:100%;
+}
+
+.banner-image{
+	position:relative;
+	z-index:0;
+}
+.banner-logo{
+	position:absolute;
+	z-index:1;
+	left:10px;
+	top:10px;
+	max-height:90%;
+}
+
+.banner-name{
+	position:absolute;
+	z-index:1;
+	bottom:5px;
+}

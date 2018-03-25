@@ -1,0 +1,36 @@
+.plupload_logo, .plupload_header_title, .plupload_header_text {display:none;}
+.plupload_header_content {height: 32px;}
+.plupload_view_switch {bottom: -2px;}
+#uploader_start{bottom:-30px;}
+ul#tablelist{list-style:none; padding:0; margin:0;}
+ul#tablelist>li{margin:4px; float:left; cursor:move;}
+ul#tablelist>li>img{max-height:60px;}
+#preview-list , #gallery .preview{padding-right:0; padding-left:0; position:relative;}
+#preview-list>li , .preview {list-style:none;padding:0; margin:0; width:100%;}
+#preview-list>li , .preview li{margin:1px; padding:2px; border:1px solid #ccc; float:left; width:auto; height:93px; overflow:hidden; text-align:center; position:relative;  margin-right:5px;margin-bottom:5px;}
+#preview-list li img , .preview li img{margin:auto; width:auto; max-height:100%;}
+#preview-list li .del-preview, .preview li .del-preview{position:absolute; bottom:5px; right:5px;  top: inherit; text-decoration:none;}
+.top10{padding-top:10px;}
+.plupload_wrapper {min-width: 100% !important;}
+#gallery>.preview{
+	min-height:220px; 
+	border:2px dotted #ccc; 
+	background:url(../images/inbox-upload.png) center no-repeat; 
+	border-radius:6px; 
+	margin:10px; 
+	padding:4px;
+}
+#gallery>.preview{cursor:pointer;}
+.ui-sortable li.ui-state-default:after {
+    content: "\f0c9";
+    display: inline-block;
+    font-family: "FontAwesome";
+    position: absolute;
+    right: 18px;
+    top: 9px;
+    text-align: center;
+    line-height: 35px;
+    color: rgba(255,255,255,.2);
+    text-shadow: 0px 0px 0px rgba(0,0,0,0);
+    cursor: move;
+}

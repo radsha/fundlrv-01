@@ -1,0 +1,17 @@
+.price-group.checkbox
+{
+	padding-top:25px !important;
+}
+
+.product-group{
+	padding-left:60px;
+}
+
+.main-group{
+	margin-bottom:10px;
+}
+
+.radio-inline+.radio-inline, .checkbox-inline+.checkbox-inline {
+    margin-right: 10px !important;
+	margin-left:0 !important;
+}
